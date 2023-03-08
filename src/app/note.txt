@@ -1,0 +1,115 @@
+angular
+-------------
+installing command
+-----------------------
+npm i -g @angular/cli@latest
+
+angularversion
+--------------
+ng v
+
+project creation
+------------------
+ng new projectname
+
+running command
+-----------------------
+ng serve --open 
+
+technologies used in angular
+-------------------------------
+1 html
+2 css
+3 typescript -superscript of js
+strictly typed language
+browser convert typescript to js while running is called transpiling
+                                                         -------------
+clone after push into git- npm 
+------------------------------------------------------------------
+
+manage third party libraries - package.json
+node module - store a copy of package and modules
+asset - store media files eg.img,vedio,audio files etc
+------------------------------------------------------------------
+
+root module
+   root component - parent
+   we can create sub component inside the root module
+   can create sub modules
+   inside sub modules components are present
+--------------------------------------------------------------------
+
+module-one ts file manage components under this file
+component- consider as a page -ts html css
+   selector- used to display the component
+---------------------------------------------------------------------
+
+@ - decorators
+decorators used to store meta data-(wrapped data)
+-------------------------------------------------------
+
+create new component
+ng generate component component name
+ng g c first
+--------------------------------------------------------------
+
+in index.js only works root component
+we can call other sub component in root component
+
+working cycle of angular component
+-----------------------------------------------------------------
+constructor-->ngOnInt--->othermethods
+
+Data Binding in angular
+--------------------------
+ts -component
+html -view
+
+1. One way Binding
+--------------------
+1.1 ts to html(component to view data sharing)
+    1.1.1 method- string interpollation    {{}}  for string
+    1.1.2 property Binding                 [property_name]="data"  for value
+
+
+    1.2 view to component(html to ts)
+    ---------------------------------
+    1.2.1 Event Binding                                 (eventname)="method()"
+    1.2.2 $Event Binding                                (eventname)="method($event)"
+    1.2.3 event binding with template rendering variable    #variableName
+    -----------------------------------------------------------------------
+
+2. Two way Binding
+----------------------
+2.1 ngModel                   [(ngModel)]="variable"
+    external module used to apply ngModel is formsModule
+                                             -----------
+                                             
+path setting in angular
+-------------------------
+path set in root module routing file
+each page need different paths
+landing page path is empty ""
+
+Redirecting in angular
+------------------------------
+method- navigateByUrl(path)
+navigate navigateByUrl present in router class
+class - Router
+module - AppRoutingModule
+
+folder - file - class - method
+package  module
+inbuild datas are in a file that files are called module
+the file will present in the folder that folderis called package
+
+Dependency Injection
+-----------------------
+to use a method of class in another class
+ in constructor we do this 
+
+           accessSpecifier reference:ClassName
+
+ first access specifier- private/public
+ private-it can access the specifier on the specified injecting class only
+ public - specifier access can done on the class in the conained other class file
