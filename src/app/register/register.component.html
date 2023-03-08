@@ -1,1 +1,20 @@
-<p style="color: antiquewhite;">register works!</p>
+<div class="mt-5">
+
+<h2 class="text-center" style="color:rgb(226, 219, 220);">Create an account</h2>
+<form class=" w-50 container p-3 mt-2" action="" style="border-radius: 20px;">
+    <div class="p-3 mt-2">
+        <input [(ngModel)]="acno" type="text" name="acno" id="ac1" class="form-control" placeholder="enter acno">
+    </div>
+    <div class="p-3 mt-2">
+        <input [(ngModel)]="uname" type="text" name="uname" id="ul" class="form-control"
+            placeholder="Enter usename">
+    </div>
+    <div class="p-3 mt-2">
+        <input [(ngModel)]="psw"  type="password" name="password" id="p1" class="form-control"placeholder="enter password" >
+    </div>
+    <div class="p-3 mt-1 text-center">
+
+<button (click)="register()"class="btn btn-dark " style="color: rgb(241, 235, 235);">sign up</button>
+    </div>
+    </form>
+    </div>

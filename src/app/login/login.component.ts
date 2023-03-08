@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-login',
@@ -23,7 +24,7 @@ export class LoginComponent {
     1004: { usename: "arul", acno: 1004, password: "abc123", balance: 0 }
 
   }
-  constructor(private router:Router){
+  constructor(private router:Router,private ds:DataService){
 
   }
 
