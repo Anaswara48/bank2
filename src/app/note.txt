@@ -113,3 +113,9 @@ to use a method of class in another class
  first access specifier- private/public
  private-it can access the specifier on the specified injecting class only
  public - specifier access can done on the class in the conained other class file
+
+ Angular sevices
+ ---------------------
+its a file in angular
+all components can access the content of service file
+create   -  ng g s filename
