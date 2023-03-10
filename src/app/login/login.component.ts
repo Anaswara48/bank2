@@ -31,21 +31,19 @@ export class LoginComponent {
   login() {
     var acnum = this.acno
     var psw = this.psw
-    var userDetails = this.userDetails
-    if (acnum in userDetails) {
-      if (psw == userDetails[acnum]["password"]) {
+    const result=this.ds.login(acnum,psw)
+    if (result) {
+  
         alert('login success')
         //redirecting
        this.router.navigateByUrl("dashboard")
 
       }
       else {
-        alert('incorrect password')
+        alert('incorrectacno or password')
       }
     }
-    else {
-      alert('incorrect acno')
-    }
+    
     // alert("login-worked")
   }
 
@@ -62,7 +60,7 @@ export class LoginComponent {
 
 
 
-}
+
 
 
 
